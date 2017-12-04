@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone"/>
+    <Button
+        android:id="@+id/store_db"
+        android:onClick="storeSqlite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store to Sqlite Db"/>
+    <Button
+        android:id="@+id/store_preference"
+        android:onClick="storePreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store to Shared Preference"/>
+    <Button
+        android:id="@+id/show_result"
+        android:onClick="displayResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Records"/>
+</LinearLayout>
